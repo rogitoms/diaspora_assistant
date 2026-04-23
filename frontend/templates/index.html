@@ -1,6 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diaspora Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
 <body>
-    <h1>Diaspora Assistant - Coming Soon</h1>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-flag">🇰🇪</span>
+        <div>
+          <span class="logo-title">Diaspora Assistant</span>
+          <span class="logo-sub">Kenya's Bridge Home</span>
+        </div>
+      </div>
+      <div class="header-badges">
+        <span class="badge badge-green">AI Powered</span>
+        <span class="badge badge-red">Live</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO STRIP -->
+  <div class="hero-strip">
+    <p>Send money · Hire services · Verify documents · Airport transfers — all from abroad</p>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <main class="main">
+
+    <!-- LEFT: INPUT PANEL -->
+    <section class="panel input-panel">
+      <div class="panel-label">NEW REQUEST</div>
+      <h2 class="panel-title">What do you need done back home?</h2>
+      <p class="panel-hint">Type naturally — our AI understands you</p>
+
+      <textarea
+        id="userRequest"
+        class="request-input"
+        placeholder="e.g. I need to send KES 20,000 to my mother in Kisumu urgently..."
+        rows="5"
+      ></textarea>
+
+      <div class="examples">
+        <p class="examples-label">Try an example:</p>
+        <button class="example-btn" onclick="fillExample(this)">Send KES 15,000 to my brother in Mombasa</button>
+        <button class="example-btn" onclick="fillExample(this)">Verify my land title deed in Karen</button>
+        <button class="example-btn" onclick="fillExample(this)">Hire a cleaner for my apartment in Westlands on Friday</button>
+        <button class="example-btn" onclick="fillExample(this)">Book an airport transfer from JKIA on Monday</button>
+      </div>
+
+      <button class="submit-btn" id="submitBtn" onclick="submitRequest()">
+        <span id="submitText">Submit Request</span>
+        <span id="submitLoader" class="loader" style="display:none"></span>
+      </button>
+
+      <!-- RESULT CARD (shown after submission) -->
+      <div id="resultCard" class="result-card" style="display:none">
+        <div class="result-header">
+          <span class="result-code" id="resultCode"></span>
+          <span class="result-team" id="resultTeam"></span>
+        </div>
+        <div class="result-risk" id="resultRisk"></div>
+        <div class="result-section">
+          <div class="result-label">STEPS</div>
+          <ol id="resultSteps" class="steps-list"></ol>
+        </div>
+        <div class="result-section">
+          <div class="result-label">MESSAGES</div>
+          <div class="msg-tabs">
+            <button class="msg-tab active" onclick="showTab(this,'whatsapp')">WhatsApp</button>
+            <button class="msg-tab" onclick="showTab(this,'email')">Email</button>
+            <button class="msg-tab" onclick="showTab(this,'sms')">SMS</button>
+          </div>
+          <div id="msgWhatsapp" class="msg-content active"></div>
+          <div id="msgEmail"    class="msg-content" style="display:none"></div>
+          <div id="msgSms"      class="msg-content" style="display:none"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT: DASHBOARD PANEL -->
+    <section class="panel dashboard-panel">
+      <div class="panel-label">TASK DASHBOARD</div>
+      <div class="dashboard-header">
+        <h2 class="panel-title">All Tasks</h2>
+        <button class="refresh-btn" onclick="loadTasks()">↻ Refresh</button>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterTasks(this,'all')">All</button>
+        <button class="filter-btn" onclick="filterTasks(this,'Pending')">Pending</button>
+        <button class="filter-btn" onclick="filterTasks(this,'In Progress')">In Progress</button>
+        <button class="filter-btn" onclick="filterTasks(this,'Completed')">Completed</button>
+      </div>
+
+      <div id="taskList" class="task-list">
+        <div class="empty-state">Loading tasks...</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Diaspora Assistant &copy; 2025 · Built for Kenyans abroad · Powered by AI</p>
+  </footer>
+
+  <script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>
