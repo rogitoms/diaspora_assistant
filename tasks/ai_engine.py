@@ -88,6 +88,18 @@ def process_request(user_input: str) -> dict:
         return result
 
     except json.JSONDecodeError as e:
-        raise ValueError(f"AI returned invalid JSON: {str(e)} | Raw: {raw}")
+        raise ValueError("We had trouble understanding your request. Please try rephrasing it.")
     except Exception as e:
-        raise ValueError(f"AI engine error: {str(e)}")
+        error_str = str(e).lower()
+
+        if "invalid_api_key" in error_str or "401" in error_str:
+            raise ValueError("Our AI service is temporarily unavailable. Please try again in a few minutes.")
+        elif "rate_limit" in error_str or "429" in error_str:
+            raise ValueError("We are experiencing high demand right now. Please wait a moment and try again.")
+        elif "decommissioned" in error_str or "model" in error_str:
+            raise ValueError("Our AI service needs a quick update. Please contact support.")
+        elif "connection" in error_str or "timeout" in error_str:
+            raise ValueError("Could not connect to our AI service. Please check your internet and try again.")
+        else:
+            raise ValueError("Something went wrong processing your request. Please try again.")
+        
