@@ -173,11 +173,24 @@ Kenyan diaspora context:
 
 
 ### One Thing That Did Not Work as Expected
-- The Groq model returned raw newline characters (`\n`) inside JSON string values 
-  which caused `json.loads()` to throw a JSONDecodeError with "Invalid control 
-  character". The JSON looked correct visually but was technically malformed. 
-  I fixed this by running `re.sub(r'(?<!\\)\n', ' ', raw)` before parsing, 
-  which strips the raw newlines while preserving intentional escaped ones. 
+
+- **Handling multiple intents in a single request** — My initial approach was to 
+  call `process_request()` once per submission, which only extracted a single intent 
+  even when the user mentioned multiple tasks in one sentence. For example, a request 
+  like "Send KES 15,000 to my sister and hire a cook for my mom" would only create 
+  one task instead of two.I attempted to fix this by writing a second function
+  `process_multi_request()` that instructed the AI to return a JSON array of tasks
+  instead of a single object. The function worked in isolation but introduced two
+  problems in production: the 70b model consumed significantly more tokens per call
+  when generating multiple full task objects, which caused Groq rate limit errors during
+  testing. The frontend result card also needed to be restructured to handle an array
+  instead of a single task object. I decided to revert to single intent processing to keep
+  the application stable and reliable. The single intent approach handles the vast majority
+  of real diaspora requests correctly — most customers make one specific request at a time.
+  The multi-intent feature would be a valuable next iteration but shipping a stable
+  single-intent system was the right call over a brittle multi-intent one that hit rate
+  limits unpredictably.
+
 
 ### Why SQLite
 - It requires zero configuration, the database is a single file that is easy to 
@@ -188,6 +201,4 @@ Kenyan diaspora context:
 - Django provides the admin panel out of the box which made it easy to inspect the database during 
   development without writing extra code.
 ```
-
----
 
