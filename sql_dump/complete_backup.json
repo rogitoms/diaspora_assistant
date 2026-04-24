@@ -1,0 +1,650 @@
+[
+  {
+    "model": "tasks.task",
+    "pk": 61,
+    "fields": {
+      "task_code": "DSP-689F5680",
+      "original_request": "I need to send KES 15000 to my sister in Nairobi urgently",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "sister",
+        "location": "Nairobi",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "high",
+        "date": null
+      },
+      "risk_score": 58,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 20,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T10:34:46.776833+00:00",
+      "updated_at": "2026-04-24T10:34:46.776895+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 60,
+    "fields": {
+      "task_code": "DSP-4107BAD0",
+      "original_request": "I need to send KES 15000 to my sister in Nairobi urgently and hire a cook for my mom in Nairobi",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "sister",
+        "location": "Nairobi",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "high",
+        "date": null
+      },
+      "risk_score": 58,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 20,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T10:00:20.680977+00:00",
+      "updated_at": "2026-04-24T10:00:20.681048+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 59,
+    "fields": {
+      "task_code": "DSP-9D8F688B",
+      "original_request": "Verify land title in Karen",
+      "intent": "verify_document",
+      "entities": {
+        "amount": null,
+        "recipient": null,
+        "location": "Karen",
+        "document_type": "land title",
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 55,
+      "risk_breakdown": {
+        "intent_base": 25,
+        "amount_risk": 0,
+        "urgency_risk": 10,
+        "document_risk": 20,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Legal",
+      "created_at": "2026-04-24T09:27:46.075570+00:00",
+      "updated_at": "2026-04-24T09:27:46.075706+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 58,
+    "fields": {
+      "task_code": "DSP-C170EBC6",
+      "original_request": "Send KES 15,000 to brother in Mombasa",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "brother",
+        "location": "Mombasa",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 48,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 10,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T09:27:43.242646+00:00",
+      "updated_at": "2026-04-24T09:27:43.242792+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 57,
+    "fields": {
+      "task_code": "DSP-6C920C05",
+      "original_request": "Verify land title in Karen",
+      "intent": "verify_document",
+      "entities": {
+        "amount": null,
+        "recipient": null,
+        "location": "Karen",
+        "document_type": "land title",
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 55,
+      "risk_breakdown": {
+        "intent_base": 25,
+        "amount_risk": 0,
+        "urgency_risk": 10,
+        "document_risk": 20,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Legal",
+      "created_at": "2026-04-24T09:27:34.455462+00:00",
+      "updated_at": "2026-04-24T09:27:34.455606+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 56,
+    "fields": {
+      "task_code": "DSP-FE408757",
+      "original_request": "Send KES 15,000 to brother in Mombasa",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "brother",
+        "location": "Mombasa",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 48,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 10,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T09:27:32.636333+00:00",
+      "updated_at": "2026-04-24T09:27:32.636648+00:00"
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 276,
+    "fields": {
+      "task": 56,
+      "step_number": 1,
+      "description": "Verify sender's identity",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 281,
+    "fields": {
+      "task": 57,
+      "step_number": 1,
+      "description": "Document receipt and initial review",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 286,
+    "fields": {
+      "task": 58,
+      "step_number": 1,
+      "description": "Verify sender's identity",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 291,
+    "fields": {
+      "task": 59,
+      "step_number": 1,
+      "description": "Receive the land title document for verification",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 296,
+    "fields": {
+      "task": 60,
+      "step_number": 1,
+      "description": "Verify your identity to ensure secure transaction",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 301,
+    "fields": {
+      "task": 61,
+      "step_number": 1,
+      "description": "Verify your identity to ensure secure transaction",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 277,
+    "fields": {
+      "task": 56,
+      "step_number": 2,
+      "description": "Confirm recipient's details",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 282,
+    "fields": {
+      "task": 57,
+      "step_number": 2,
+      "description": "Authenticity check with relevant authorities",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 287,
+    "fields": {
+      "task": 58,
+      "step_number": 2,
+      "description": "Confirm recipient's details",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 292,
+    "fields": {
+      "task": 59,
+      "step_number": 2,
+      "description": "Check the authenticity of the land title document",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 297,
+    "fields": {
+      "task": 60,
+      "step_number": 2,
+      "description": "Confirm recipient details to avoid any errors",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 302,
+    "fields": {
+      "task": 61,
+      "step_number": 2,
+      "description": "Confirm your sister's details to ensure correct recipient",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 278,
+    "fields": {
+      "task": 56,
+      "step_number": 3,
+      "description": "Initiate transfer of KES 15,000",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 283,
+    "fields": {
+      "task": 57,
+      "step_number": 3,
+      "description": "Cross-reference with land registry",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 288,
+    "fields": {
+      "task": 58,
+      "step_number": 3,
+      "description": "Initiate money transfer",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 293,
+    "fields": {
+      "task": 59,
+      "step_number": 3,
+      "description": "Cross-reference the land title with the registry",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 298,
+    "fields": {
+      "task": 60,
+      "step_number": 3,
+      "description": "Initiate the transfer of KES 15000",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 303,
+    "fields": {
+      "task": 61,
+      "step_number": 3,
+      "description": "Initiate the transfer of KES 15000 to your sister's account",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 279,
+    "fields": {
+      "task": 56,
+      "step_number": 4,
+      "description": "Send notification to sender and recipient",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 284,
+    "fields": {
+      "task": 57,
+      "step_number": 4,
+      "description": "Risk assessment and verification",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 289,
+    "fields": {
+      "task": 58,
+      "step_number": 4,
+      "description": "Send notification to sender and recipient",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 294,
+    "fields": {
+      "task": 59,
+      "step_number": 4,
+      "description": "Assess any risks associated with the land title",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 299,
+    "fields": {
+      "task": 60,
+      "step_number": 4,
+      "description": "Send notification to your sister about the transfer",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 304,
+    "fields": {
+      "task": 61,
+      "step_number": 4,
+      "description": "Send a notification to your sister about the incoming transfer",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 280,
+    "fields": {
+      "task": 56,
+      "step_number": 5,
+      "description": "Confirm transfer completion",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 285,
+    "fields": {
+      "task": 57,
+      "step_number": 5,
+      "description": "Result report and notification",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 290,
+    "fields": {
+      "task": 58,
+      "step_number": 5,
+      "description": "Confirm transfer completion",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 295,
+    "fields": {
+      "task": 59,
+      "step_number": 5,
+      "description": "Compile and send a report on the verification result",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 300,
+    "fields": {
+      "task": 60,
+      "step_number": 5,
+      "description": "Confirm the transfer is successful",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.step",
+    "pk": 305,
+    "fields": {
+      "task": 61,
+      "step_number": 5,
+      "description": "Confirm the transfer is complete and your sister has received the funds",
+      "completed": false
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 166,
+    "fields": {
+      "task": 56,
+      "channel": "whatsapp",
+      "content": "Hello, we've received your request to send KES 15,000 to your brother in Mombasa.      We'll verify your details and initiate the transfer.      You'll receive a notification once it's done. \ud83d\udcf1"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 167,
+    "fields": {
+      "task": 56,
+      "channel": "email",
+      "content": "Subject: Money Transfer Request DSP-FE408757     Dear Sender,     We acknowledge receipt of your request to transfer KES 15,000 to your brother in Mombasa.     Our team will verify your details and initiate the transfer.     You will receive a notification once the transfer is complete.     Please contact us if you have any questions.     Best regards,     Diaspora Assistant team"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 168,
+    "fields": {
+      "task": 56,
+      "channel": "sms",
+      "content": "Transfer KES 15,000 to brother in Mombasa DSP-FE408757"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 169,
+    "fields": {
+      "task": 57,
+      "channel": "whatsapp",
+      "content": "Hello, we've received your request to verify a land title in Karen.      Our team will review the document and check its authenticity with the relevant authorities.      We'll keep you updated on the progress.      Thanks for choosing our service! \ud83d\udcdd"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 170,
+    "fields": {
+      "task": 57,
+      "channel": "email",
+      "content": "Subject: Verification of Land Title in Karen - DSP-6C920C05     Dear Client,     We are writing to confirm receipt of your request to verify a land title in Karen.      Our team will conduct a thorough review and check the document's authenticity with the relevant authorities.      We will keep you updated on the progress and notify you once the verification is complete.     Please feel free to contact us if you have any questions or concerns.     Best regards,     The Diaspora Assistant Team"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 171,
+    "fields": {
+      "task": 57,
+      "channel": "sms",
+      "content": "Land title verification in progress DSP-6C920C05"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 172,
+    "fields": {
+      "task": 58,
+      "channel": "whatsapp",
+      "content": "Hello, we've received your request to send KES 15,000 to your brother in Mombasa.      We'll verify your identity and confirm the recipient's details.      You'll receive a notification once the transfer is complete. \ud83d\udcc8"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 173,
+    "fields": {
+      "task": 58,
+      "channel": "email",
+      "content": "Subject: Money Transfer Request DSP-C170EBC6     Dear Sender,     We have received your request to send KES 15,000 to your brother in Mombasa.     Our team will verify your identity, confirm the recipient's details, and initiate the transfer.     You will receive a notification once the transfer is complete.     Best regards,     Diaspora Assistant team"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 174,
+    "fields": {
+      "task": 58,
+      "channel": "sms",
+      "content": "Money transfer DSP-C170EBC6 initiated"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 175,
+    "fields": {
+      "task": 59,
+      "channel": "whatsapp",
+      "content": "Hello, we've received your request to verify a land title in Karen.      Our team will review the document and cross-check with the registry.      We'll keep you updated on the progress.      Thanks for choosing our service! \ud83d\ude4f"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 176,
+    "fields": {
+      "task": 59,
+      "channel": "email",
+      "content": "Subject: Land Title Verification Request DSP-9D8F688B     Dear Client,     We acknowledge receipt of your request to verify a land title in Karen.     Our Legal team will handle this task and keep you informed.     Please find the details of your request below:     - Location: Karen     - Document Type: Land Title     We will send you a report once the verification is complete.     Best regards,     The Diaspora Assistant Team"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 177,
+    "fields": {
+      "task": 59,
+      "channel": "sms",
+      "content": "Land title verification DSP-9D8F688B initiated"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 178,
+    "fields": {
+      "task": 60,
+      "channel": "whatsapp",
+      "content": "Hello, we've got your request to send KES 15000 to your sister in Nairobi.      We'll get this done urgently for you.      Please expect an update soon. \ud83d\ude80"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 179,
+    "fields": {
+      "task": 60,
+      "channel": "email",
+      "content": "Dear valued customer,     Re: Task Reference DSP-4107BAD0 - Urgent Money Transfer     We have received your request to send KES 15000 to your sister in Nairobi.     Our team will verify your identity, confirm recipient details, initiate the transfer,      send a notification to your sister, and confirm the transfer.     Please let us know if you need any further assistance.     Best regards,     Diaspora Assistant team"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 180,
+    "fields": {
+      "task": 60,
+      "channel": "sms",
+      "content": "Money transfer DSP-4107BAD0 initiated"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 181,
+    "fields": {
+      "task": 61,
+      "channel": "whatsapp",
+      "content": "Hello, we've got your request to send KES 15000 to your sister in Nairobi.      We'll get this done urgently for you.      Please expect an update from us soon. \ud83d\ude80"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 182,
+    "fields": {
+      "task": 61,
+      "channel": "email",
+      "content": "Dear valued customer,     Re: Task Reference DSP-689F5680 - Urgent Money Transfer to Sister in Nairobi     We have received your request to send KES 15000 to your sister in Nairobi and are working on it urgently.     Our team will verify your identity, confirm your sister's details, and initiate the transfer.     You will receive a notification once the transfer is complete.     Please feel free to contact us if you have any questions.     Best regards,     The Diaspora Assistant team"
+    }
+  },
+  {
+    "model": "tasks.message",
+    "pk": 183,
+    "fields": {
+      "task": 61,
+      "channel": "sms",
+      "content": "Urgent money transfer DSP-689F5680 initiated"
+    }
+  }
+]
