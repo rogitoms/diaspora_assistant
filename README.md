@@ -157,7 +157,7 @@ Kenyan diaspora context:
 ### AI Tools Used
 - **Groq API** — chosen for its fast inference on open source models and 
   generous free tier
-- **Model: gemma2-9b-it** —  chosen because it produces highly consistent 
+- **Model: llama-3.3-70b-versatile** —  chosen because it produces highly consistent 
   structured JSON output and follows complex system prompt instructions reliably.
 
 ### How I Designed the System Prompt
