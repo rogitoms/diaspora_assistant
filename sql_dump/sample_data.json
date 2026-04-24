@@ -1,0 +1,188 @@
+[
+  {
+    "model": "tasks.task",
+    "pk": 61,
+    "fields": {
+      "task_code": "DSP-689F5680",
+      "original_request": "I need to send KES 15000 to my sister in Nairobi urgently",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "sister",
+        "location": "Nairobi",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "high",
+        "date": null
+      },
+      "risk_score": 58,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 20,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T10:34:46.776833+00:00",
+      "updated_at": "2026-04-24T10:34:46.776895+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 60,
+    "fields": {
+      "task_code": "DSP-4107BAD0",
+      "original_request": "I need to send KES 15000 to my sister in Nairobi urgently and hire a cook for my mom in Nairobi",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "sister",
+        "location": "Nairobi",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "high",
+        "date": null
+      },
+      "risk_score": 58,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 20,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T10:00:20.680977+00:00",
+      "updated_at": "2026-04-24T10:00:20.681048+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 59,
+    "fields": {
+      "task_code": "DSP-9D8F688B",
+      "original_request": "Verify land title in Karen",
+      "intent": "verify_document",
+      "entities": {
+        "amount": null,
+        "recipient": null,
+        "location": "Karen",
+        "document_type": "land title",
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 55,
+      "risk_breakdown": {
+        "intent_base": 25,
+        "amount_risk": 0,
+        "urgency_risk": 10,
+        "document_risk": 20,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Legal",
+      "created_at": "2026-04-24T09:27:46.075570+00:00",
+      "updated_at": "2026-04-24T09:27:46.075706+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 58,
+    "fields": {
+      "task_code": "DSP-C170EBC6",
+      "original_request": "Send KES 15,000 to brother in Mombasa",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "brother",
+        "location": "Mombasa",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 48,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 10,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T09:27:43.242646+00:00",
+      "updated_at": "2026-04-24T09:27:43.242792+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 57,
+    "fields": {
+      "task_code": "DSP-6C920C05",
+      "original_request": "Verify land title in Karen",
+      "intent": "verify_document",
+      "entities": {
+        "amount": null,
+        "recipient": null,
+        "location": "Karen",
+        "document_type": "land title",
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 55,
+      "risk_breakdown": {
+        "intent_base": 25,
+        "amount_risk": 0,
+        "urgency_risk": 10,
+        "document_risk": 20,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Legal",
+      "created_at": "2026-04-24T09:27:34.455462+00:00",
+      "updated_at": "2026-04-24T09:27:34.455606+00:00"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 56,
+    "fields": {
+      "task_code": "DSP-FE408757",
+      "original_request": "Send KES 15,000 to brother in Mombasa",
+      "intent": "send_money",
+      "entities": {
+        "amount": 15000,
+        "recipient": "brother",
+        "location": "Mombasa",
+        "document_type": null,
+        "service_type": null,
+        "urgency": "medium",
+        "date": null
+      },
+      "risk_score": 48,
+      "risk_breakdown": {
+        "intent_base": 30,
+        "amount_risk": 8,
+        "urgency_risk": 10,
+        "document_risk": 0,
+        "unknown_recipient": 0,
+        "no_location": 0
+      },
+      "status": "Pending",
+      "employee_team": "Finance",
+      "created_at": "2026-04-24T09:27:32.636333+00:00",
+      "updated_at": "2026-04-24T09:27:32.636648+00:00"
+    }
+  }
+]
